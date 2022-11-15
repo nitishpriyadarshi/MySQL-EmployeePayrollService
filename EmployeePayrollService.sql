@@ -12,3 +12,7 @@ select * from employee_payroll where start between CAST('2018-01-01' AS DATE)AND
  alter table employee_payroll add gender char(1) after name; 
 update payroll_service.employee_payroll set gender = 'M' where name = 'bill';
 update payroll_service.employee_payroll set gender = 'F' where name = 'bill';
+select * from employee_payroll;
+ select sum(salary) from employee_payroll where gender = 'F' group by gender;
+ select gender, count(name) from employee_payroll group by gender; 
+  select * ,avg(salary) from employee_payroll;
