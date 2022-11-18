@@ -16,3 +16,6 @@ select * from employee_payroll;
  select sum(salary) from employee_payroll where gender = 'F' group by gender;
  select gender, count(name) from employee_payroll group by gender; 
   select * ,avg(salary) from employee_payroll;
+  select * ,min(salary) from payroll_service.employee_payroll;
+select * ,max(salary) from payroll_service.employee_payroll;
+select count(salary) from payroll_service.employee_payroll;
